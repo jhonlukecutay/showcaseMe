@@ -1,0 +1,80 @@
+/* ANIMATION FOR JS */
+
+
+.fade {
+    opacity: 0;
+    filter: blur(5px);
+    /* transform: translateX(-100%); */
+    transition: all 2s;
+  }
+
+  .fade.show {
+    opacity: 1;
+    filter: blur(0);
+    /* transform: translateX(0); */
+  }
+
+  .fadeIn {
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  
+  .fadeIn.show {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+
+
+  .fadeLeftBlur {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  }
+
+  .fadeLeftBlur.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  
+  .slideLeft {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s;
+  }
+
+  .slideLeft.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .slideRight {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 2s;
+  }
+
+  .slideRight.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+  @media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+
+    .appear {
+        transition: none;
+    }
+  }
+
